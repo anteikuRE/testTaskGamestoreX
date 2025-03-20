@@ -100,7 +100,10 @@ function OrdersPage({setOrdersControl, ordersControl}: Props) {
                                 <p>No users available.</p>
                             )
                         ) : (
-                            <p>Loading...</p>
+                            <Order openOrderId={openOrderId} setOpenOrderId={setOpenOrderId}
+                                   orderOpen={orderOpen} setOrderOpen={setOrderOpen}
+                                   ordersControl={ordersControl}
+                                   setOrdersControl={setOrdersControl}/>
                         )
                         }
                     </>
